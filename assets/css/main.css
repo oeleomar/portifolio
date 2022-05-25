@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
 
 *{
     border: 0;
@@ -36,7 +36,7 @@
 }
 
 html{
-    font-size: 65%;
+    font-size: 62.5%;
 }
 
 body{
@@ -53,8 +53,12 @@ h2{
     font-size: clamp(2rem, 4.5vw, 5.5rem);
 }
 
+h3{
+    font-size: clamp(1.6rem, 4.5vw, 2.5rem);
+}
+
 p{
-    font-size: clamp(1rem, 2.5vw, 3rem);
+    font-size: 1.6rem;
 }
 
 a{

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <title>Eleomar Dorneles</title>
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/header.css">
@@ -20,22 +20,60 @@
     </div>
     <header class="main-header">
         <div class="background"></div>
-        <nav>
+        <nav >
             <ul>
                 <li><a href="#" class="a-home">Home</a></li>
-                <li><a href="#">Sobre Mim</a></li>
+                <li><a href="#abt-me">Sobre Mim</a></li>
                 <li><a href="#">Portifólio</a></li>
                 <li><a href="#">Skills</a></li>
                 <li><a href="#">Certificados</a></li>
-                
             </ul>
             <button class="contact-btn">Contato</button>
         </nav>
-    </header>
-    <main>
-        <section class="container">
-            <h1>Eleomar Dorneles</h1>
+        <section class="header-container">
+            <div class="header-text-container">
+                <p >Olá 👋 eu sou</p>
+                <h1 >Eleomar Dorneles</h1>
+                <h3 class="color-green" >Desenvolvedor</h3>
+                <p class="description" >Desenvolvedor focado em desempenho, utilizando-se das tecnologias como HTML, CSS e <span class="color-green">JavaScript</span> para o front-end e <span class="color-green">Node.js</span> para o  backend. </p>
+                <button class="contact-btn btn-hire">Entre em contato</button>   
+            </div>
+            <img src="./assets/img/logo.png" alt="Logo Cartoon de Desenvolver Eleomar Dorneles"> 
+            
         </section>
+    </header>
+    <main class="main-container">
+        <section class="container" id="abt-me">
+            <div class="picture-container" data-anim="left">
+                <img src="./assets/img/logo.png" alt="#" class="logo-img">
+            </div>
+            <div class="text-container" data-anim="right">
+                <h3>Sobre mim</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam tenetur dolorum quibusdam asperiores quas eaque est omnis aliquam aspernatur corrupti. Nostrum vel totam quod quo vero animi fugiat, eos quibusdam?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates vel, dolor, accusamus dolore sequi omnis accusantium expedita ad iusto iste deserunt corporis maxime odio velit delectus fuga fugiat recusandae itaque!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo iure culpa ut cumque modi consectetur at necessitatibus aut eos praesentium aspernatur, tenetur dicta, rem nam eaque sint, temporibus ipsa labore.</p>
+            </div>
+        </section>
+        <section class="container" id="projects">
+            
+            <div class="main-projects">
+                <h3>Meus Projetos</h3>
+                <div class="project">
+                    <div class="logos">
+
+                    </div>
+                    <div class="text-container">
+
+                    </div>
+                    <div class="button-container">
+                        <button class="button">Ver Preview</button>
+                        <button class="button">Ver no Github</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+              
     </main>
+    <script src="./assets/js/anim.js"></script>
 </body>
 </html>
