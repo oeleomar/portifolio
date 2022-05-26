@@ -7,9 +7,7 @@
 }
 
 .container{
-    max-width: 100rem;
-    min-height: 100vh;
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: center;
     margin-top: 15rem;
@@ -20,6 +18,10 @@
     transition: all .3s ease-in-out;
 }
 [data-anim='bottom']{
+    transform: translate3d(0px, 50px, 0px);
+}
+
+[data-anim='top']{
     transform: translate3d(0px, -50px, 0px);
 }
 
@@ -56,10 +58,114 @@
     height: 45rem;
 }
 
+.text-container{
+    max-width: 35rem;
+}
+
 .text-container h3{
     margin-bottom: 3rem;
 }
 
 .text-container p {
     margin-bottom: 3rem;
+}
+
+.main-projects{
+    margin-top: 10rem;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 10rem
+}
+
+.project-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project{
+    position: relative;
+    max-width: 35rem;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 2rem;
+    background-color: var(--color-background-third);
+    padding: 3.5rem;
+    border-radius: 20px;
+    box-shadow: 0 1.6rem 2.4rem rgb(0 0 0 / 25%);
+    transition: all .5s ease-in-out;
+}
+
+.logos i {
+    font-size: 3.5rem;
+}
+
+.orange{
+    color: #ea5d24;
+}
+
+.blue{
+    color: #254bdd;
+}
+
+.yellow{
+    color: yellow;
+}
+
+.text-container{
+    text-align: right;
+}
+
+.text-container h3{
+    font-size: 2rem;
+}
+
+.button-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-container .button{
+    background-color: var(--color-green-third);
+    width: 13rem;
+    padding: 1.5rem 0;
+    font-size: 1.6rem;
+    border-radius: 20px;
+    font-family: inherit;
+    transition: all .5s ease-in-out;
+}
+
+/* LINHA ROXA */
+
+/* LINHA AZUL */
+
+/* LINHA VERDE */
+.linha-verde{
+    width: 100%;
+    height: 15px;
+    background-color: var(--color-green-third);
+    position: absolute;
+    top: calc(100% - 15px);
+    left: 0%;
+    border-radius: 0px 0px 20px 20px;
+    transition: all .5s ease-in-out;
+}
+
+.green-hover:hover{
+    background-color: var(--color-green-third);
+    color: var(--color-background-second)
+}
+
+.green-hover:hover .button-container .button{
+    background-color: var(--color-background-second);
+    color: white;
+}
+
+.green-hover:hover .linha-verde{
+    background-color: var(--color-background-third);
 }
