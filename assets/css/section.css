@@ -10,7 +10,7 @@
     width: 80%;
     display: flex;
     justify-content: center;
-    margin-top: 15rem;
+    padding-top: 15rem;
 }
 
 [data-anim]{
