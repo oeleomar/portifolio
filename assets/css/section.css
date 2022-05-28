@@ -47,7 +47,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 45%;
+    max-width: 35rem;
+    margin-right: 10rem;
     position: relative;
 }
 
@@ -58,21 +60,21 @@
     left: -2rem;
     border-top: 9px solid var(--color-green-third);
     border-left: 9px solid var(--color-green-third);
-    width: calc(100% - 2rem);
-    height: calc(100% - 2rem);
+    width: calc(100% - 10rem);
+    height: calc(100% - 20rem);
 }
 
 .text-container{
-    width: 50%;
+    width: 35%;
 }
 
 .picture-container img{
     width: 100%;
+    margin-bottom: auto;
 }
 
 .text-container h3.section-title{
     margin-bottom: 3rem;
-    font-size:clamp(2.5rem, 4.5vw, 4.5rem);
 }
 
 .text-container p {
@@ -81,10 +83,6 @@
 
 
 /* PROJETOS */
-
-.main-projects{
-    margin-top: 10rem;
-}
 
 .title{
     text-align: center;
@@ -100,7 +98,7 @@
 
 .project{
     position: relative;
-   
+    min-width: 35rem;
     height: 35rem;
     display: flex;
     flex-direction: column;
@@ -134,7 +132,12 @@
 }
 
 .text-container-projects h3{
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.text-container-projects p{
+    font-size: 1.4rem;
 }
 
 .button-container{
@@ -145,9 +148,9 @@
 
 .button-container .button{
     background-color: var(--color-green-third);
-    width: 13rem;
-    padding: 1.5rem 0;
-    font-size: 1.6rem;
+    
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
     border-radius: 20px;
     font-family: inherit;
     font-weight: 600;

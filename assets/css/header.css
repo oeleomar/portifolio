@@ -127,7 +127,7 @@
     background-color: var(--color-green-third);
     border-radius: 20px;
     padding: 1rem 3rem;
-    font-size: clamp(1.6rem, 4.5vw, 2rem);
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
     color: var(--color-background-second);
     cursor: pointer;
     font-family: inherit;
@@ -181,12 +181,11 @@
 
 .header-text-container .description{
     text-transform: none;
-    font-size: clamp(1.2rem, 4.5vw, 2.3rem);
 }
 
 .btn-hire{
     margin-top: 2rem;
-    width: 40%;
+    width: 45%;
     padding: 1.4rem;
 }
 

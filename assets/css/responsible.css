@@ -1,4 +1,4 @@
-@media (min-width: 1400px) {
+@media (min-width: 1441px) {
     
     .header-container img{
         width: 60rem;
@@ -14,7 +14,7 @@
     
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1440px) {
     .header-container img{
         width: 40rem;
         height: 40rem;
@@ -24,7 +24,7 @@
     }
 
     .abt-me{
-        max-width: 80%;
+        max-width: 70%;
     }
 
     .project-container{
@@ -33,25 +33,21 @@
     
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1080px) {
     .main-header nav{
         display: none;
     }
-
-    
     
     .header-container{
         justify-content: center;
+        margin-top: 0;
     }
     .header-container img{
        display: none;
     }
-    .header-text-container{
-        max-width: 80%;
-    }
 
     .abt-me{
-        max-width: 90%;
+        max-width: 60%;
         flex-direction:column-reverse;
         align-items: center;
     }
@@ -59,16 +55,23 @@
     .picture-container{
         margin-top: 5rem;
         width: auto;
+        max-width: 35rem;
+        margin-right: 0;
     }
 
     .picture-container::after{
-
-        width: calc(100% - 2rem);
-        height: calc(100% - 2rem);
+        border-top: 7px solid var(--color-green-third);
+        border-left: 7px solid var(--color-green-third);
+        width: calc(100% - 6rem);
+        height: calc(100% - 12rem);
     }
-    
+
     .text-container{
         width: 100%;
+    }
+
+    .main-projects{
+        margin-top: 6rem;
     }
 
     .project-container{
@@ -111,6 +114,14 @@
     .btn-hire{
         width: 60%;
     }
+    
+    .main-projects{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
 
     .project-container{
         max-width: 90%;
@@ -120,8 +131,12 @@
         padding: 3rem;
     }
 
-    .main-projects{
-        margin-top: 5rem;
+
+    .picture-container::after{
+        border-top: 7px solid var(--color-green-third);
+        border-left: 7px solid var(--color-green-third);
+        width: calc(100% - 5rem);
+        height: calc(100% - 10rem);
     }
 }
 
@@ -130,15 +145,30 @@
         padding-top: 10rem;
     }
 
+    .main-projects{
+        align-items: unset;
+    }
     .project{
         padding: 2rem;
         width: 90%;
+        min-width: 30rem;
+        height: 30rem;
     }
 
     .btn-hire{
         width: 70%;
     }
 
+    .picture-container{
+        margin-right: 0;
+    }
+
+    .picture-container::after{
+        border-top: 5px solid var(--color-green-third);
+        border-left: 5px solid var(--color-green-third);
+        width: calc(100% - 3rem);
+        height: calc(100% - 5rem);
+    }
 }
 
     
