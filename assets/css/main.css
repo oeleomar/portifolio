@@ -6,6 +6,7 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
 }
 
 :root{
@@ -43,27 +44,28 @@ html{
 body{
     font-family: 'Montserrat', sans-serif;
     color: var(--color-white);
+    overflow-x: hidden;
     
 }
 
 h1{
-    font-size: clamp(2rem, 5vw, 6rem);
+    font-size: clamp(4rem, 5vw, 10rem);
 } 
 
 h2{
-    font-size: clamp(2rem, 4.5vw, 5.5rem);
+    font-size: clamp(3rem, 2.5vw, 6rem);
 }
 
 h3{
-    font-size: clamp(1.6rem, 4.5vw, 2.5rem);
+    font-size: clamp(2.5rem, 4.5vw, 4.5rem);
 }
 
 p{
-    font-size: 1.6rem;
+    font-size: clamp(1.2rem, 4.5vw, 2rem);
 }
 
 a{
-    font-size: 1.6rem;
+    font-size: clamp(1.6rem, 4.5vw, 2rem);
     text-decoration: none;
     color: inherit;
 }

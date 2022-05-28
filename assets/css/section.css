@@ -36,14 +36,18 @@
 [data-anim].animate{
     transform: translate3d(0px, 0px, 0px);
     opacity: 1;
+    
+}
+
+.abt-me{
+    max-width: 80%;
 }
 
 .picture-container{
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 50rem;
-    max-height: 50rem;
+    width: 50%;
     position: relative;
 }
 
@@ -54,21 +58,29 @@
     left: -2rem;
     border-top: 9px solid var(--color-green-third);
     border-left: 9px solid var(--color-green-third);
-    width: 35rem;
-    height: 45rem;
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
 }
 
 .text-container{
-    max-width: 35rem;
+    width: 50%;
 }
 
-.text-container h3{
+.picture-container img{
+    width: 100%;
+}
+
+.text-container h3.section-title{
     margin-bottom: 3rem;
+    font-size:clamp(2.5rem, 4.5vw, 4.5rem);
 }
 
 .text-container p {
     margin-bottom: 3rem;
 }
+
+
+/* PROJETOS */
 
 .main-projects{
     margin-top: 10rem;
@@ -80,14 +92,15 @@
 }
 
 .project-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
 }
 
 .project{
     position: relative;
-    max-width: 35rem;
+   
     height: 35rem;
     display: flex;
     flex-direction: column;
@@ -116,11 +129,11 @@
     color: yellow;
 }
 
-.text-container{
+.text-container-projects{
     text-align: right;
 }
 
-.text-container h3{
+.text-container-projects h3{
     font-size: 2rem;
 }
 
@@ -137,12 +150,10 @@
     font-size: 1.6rem;
     border-radius: 20px;
     font-family: inherit;
+    font-weight: 600;
     transition: all .5s ease-in-out;
+    cursor: pointer;
 }
-
-/* LINHA ROXA */
-
-/* LINHA AZUL */
 
 /* LINHA VERDE */
 .linha-verde{
@@ -169,3 +180,4 @@
 .green-hover:hover .linha-verde{
     background-color: var(--color-background-third);
 }
+
