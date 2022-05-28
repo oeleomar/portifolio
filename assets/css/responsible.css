@@ -28,7 +28,7 @@
     }
 
     .project-container{
-        grid-template-columns: 1fr 1fr 1fr;
+       /*  grid-template-columns: 1fr 1fr 1fr; */
     }
     
 }
@@ -75,7 +75,7 @@
     }
 
     .project-container{
-        grid-template-columns: 1fr 1fr;
+        /* grid-template-columns: 1fr 1fr; */
     }
 
     .project{
@@ -120,12 +120,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     }
 
     .project-container{
         max-width: 90%;
-        grid-template-columns: 1fr;
+        /* grid-template-columns: 1fr; */
     }
     .project{
         padding: 3rem;

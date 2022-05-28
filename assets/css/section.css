@@ -90,16 +90,18 @@
 }
 
 .project-container{
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-
 }
 
 .project{
     position: relative;
-    min-width: 35rem;
-    height: 35rem;
+    min-width: 30rem;
+    max-width: 30rem;
+    height: 30rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
